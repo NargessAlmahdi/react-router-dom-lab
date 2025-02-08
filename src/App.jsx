@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router';
-import NavBar from './components/NavBar/NavBar';
-import MailboxForm from './components/MailboxForm/MailboxForm';
-import MailboxList from './components/MailboxList/MailboxList';
-import MailboxDetails from './components/MailboxDetails/MailboxDetails';
+import { Route, Routes } from 'react-router'
+import NavBar from './components/NavBar/NavBar'
+import MailboxForm from './components/MailboxForm/MailboxForm'
+import MailboxList from './components/MailboxList/MailboxList'
+import MailboxDetails from './components/MailboxDetails/MailboxDetails'
 
 // src/App.jsx
 
 const App = () => {
-  const [mailboxes, setMailboxes] = useState([]);
+  const [mailboxes, setMailboxes] = useState([])
 
   const addBox = ({ boxOwner, boxSize }) => {
     const newMailbox = {
@@ -17,7 +17,7 @@ const App = () => {
       boxOwner,
       boxSize,
     };
-    setMailboxes([...mailboxes, newMailbox]);
+    setMailboxes([...mailboxes, newMailbox])
   };
 
   return (
@@ -34,4 +34,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App
